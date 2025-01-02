@@ -1,40 +1,24 @@
-import React, { useEffect, useState } from 'react'
-import Background from './components/Background/Background'
+import React from 'react'
+import Home from './pages/Home/Home'
 import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Contact from './pages/Contact/Contact'
+import Explore from './pages/Explore/Explore'
+import About from './pages/About/About'
 
-
-function App() {
-  let heroData =[
-    {text1 : "Dive into",text2 : "what you love"},
-    {text1 : "indulge",text2 : "your passions"},
-    {text1 : "Give in to",text2 : "your passions"}
-  ]
-   
-  const [heroCount, setheroCount] = useState(0)      
-  const [playStatus, setplayStatus] = useState(false)
-
-
-  useEffect(() => {
-    setInterval(() => {
-      setheroCount((count)=>{return count===2?0:count+1})
-    }, 3000);
-   
-  }, [])
-  
-
+const App = () => {
   return (
-    <div>
-    <Background playStatus ={playStatus} heroCount={heroCount}/>
-    <Navbar/>
-    <Hero 
-     heroData ={heroData[heroCount]}
-     heroCount = {heroCount}
-     setheroCount = {setheroCount}
-     playStatus ={playStatus}
-     setplayStatus = {setplayStatus}
-    />
-    </div>
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={<Navbar />}>
+          <Route index element={<Home />} />
+          <Route path="explore" element={<Explore />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

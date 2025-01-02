@@ -17,10 +17,18 @@
     align-items: center;
     font-size: 18px;
     gap: 90px;
+
 }
 .nav-contact{
     border-radius: 50px;
     background: #fff;
     padding: 10px 38px;
     color: #262626;
+}
+.a{
+    text-decoration: none;
+    
+}
+.b{
+    color: white;
 }

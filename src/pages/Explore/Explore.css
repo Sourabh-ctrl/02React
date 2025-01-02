@@ -1,0 +1,29 @@
+.img{
+    height: 630px;
+    width: 411px;
+    margin: 20px;
+    float: left;
+    top: 80px;
+    left:0;
+    right: 0;
+    bottom: 0;
+    padding: none;
+    /* position: fixed; */
+    object-fit: cover;
+    /* z-index: -1; */
+    border-radius: 15px;
+}
+.image{
+    margin-top: -15px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba( 200, 200, 200, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 60, 160, 220, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+}

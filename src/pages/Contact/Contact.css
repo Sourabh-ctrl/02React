@@ -1,0 +1,68 @@
+.form{
+    display: flex;
+    flex-direction: column ;
+    max-width: 600px;
+    /* max-height: 600px; */
+    /* background: #FFf; */
+    padding: 40px;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    left: 80px;
+    /* top: 50px; */
+    /* background: #000; */
+    background: rgba( 200 , 200, 200, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 60, 160, 220, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.form label{
+    font-size: 16px;
+    font-family: poppins;
+    font-weight: 400;
+    margin-left: 20px;
+    background: transparent;
+    color: white;
+    /* margin-bottom: -32px; */
+
+}
+.form input ,textarea{
+    padding: 6px 12px ;
+    background: none  ;
+    color: white;
+    border: 1px solid white ;
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: indigo;
+
+}
+.form textarea{
+    height: 70px;
+    padding-top: 10px;
+
+}
+
+
+.form button{
+    margin-left: 72%;
+    /* color: white; */
+    padding: 10px;
+    /* height: 35px; */
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 30px;
+    background: transparent;
+    font-family: poppins;
+
+}
+.form input::placeholder {
+    color: #111;
+    opacity: 1; /* Firefox */
+  }
